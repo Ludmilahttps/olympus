@@ -9,10 +9,10 @@ const ProtectedRoute = ({ children }) => {
   // Mostrar loading enquanto verifica autenticação
   if (isLoading) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center bg-olympus-cream">
         <div className="text-center">
-          <Loader2 className="h-8 w-8 animate-spin mx-auto mb-4" />
-          <p className="text-muted-foreground">Verificando autenticação...</p>
+          <Loader2 className="h-8 w-8 animate-spin mx-auto mb-4 text-olympus-green" />
+          <p className="text-muted-foreground">Verificando...</p>
         </div>
       </div>
     );

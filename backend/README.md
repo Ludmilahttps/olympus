@@ -112,8 +112,8 @@ A API estará disponível em: `http://localhost:8000`
 ## 📊 Endpoints da API
 
 ### Autenticação
-- `POST /api/auth/register/` - Registro de usuário
-- `POST /api/auth/login/` - Login
+- `POST /api/register/` - Registro de usuário
+- `POST /api/login/` - Login
 - `POST /api/auth/token/refresh/` - Renovar token
 - `GET /api/auth/profile/` - Perfil do usuário
 
@@ -215,7 +215,7 @@ A documentação interativa da API está disponível em:
 
 A API utiliza JWT (JSON Web Tokens) para autenticação. Para acessar endpoints protegidos:
 
-1. Faça login em `/api/auth/login/` para obter os tokens
+1. Faça login em `/api/login/` para obter os tokens
 2. Inclua o token de acesso no header: `Authorization: Bearer <seu-token>`
 3. Use o token de refresh para renovar tokens expirados
 

@@ -143,7 +143,7 @@ const WorkspaceCreateForm = () => {
             <p className="text-muted-foreground mb-4">
               Você precisa estar logado para cadastrar um espaço de trabalho.
             </p>
-            <Button onClick={() => navigate('/auth/login')}>
+            <Button onClick={() => navigate('/login')}>
               Fazer Login
             </Button>
           </CardContent>

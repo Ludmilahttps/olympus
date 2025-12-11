@@ -1,5 +1,6 @@
 import tailwindcssAnimate from "tailwindcss-animate";
 
+/** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ["class"],
   content: [
@@ -50,6 +51,14 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // --- CORES OLYMPUS ---
+        olympus: {
+            cream: "#fff7e6",      // Fundo suave solicitado
+            green: "#00291C",      // Verde Profundo (Principal)
+            olive: "#687451",      // Verde Oliva (Detalhes)
+            terra: "#954130",      // Terracota (Botões)
+            burgundy: "#3B0014",   // Erro/Alerta
+        }
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -65,10 +74,16 @@ export default {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        // Animação para o formulário de cadastro aparecer suavemente
+        "show": {
+            "0%, 49.99%": { opacity: "0", zIndex: "10" },
+            "50%, 100%": { opacity: "1", zIndex: "50" }
+        }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "show": "show 0.6s", // Registrando a animação show
       },
     },
   },

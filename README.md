@@ -168,8 +168,8 @@ O frontend React inclui:
 
 O sistema utiliza JWT para autenticação:
 
-1. **Login**: POST `/api/auth/login/`
-2. **Registro**: POST `/api/auth/register/`
+1. **Login**: POST `/api/login/`
+2. **Registro**: POST `/api/register/`
 3. **Refresh Token**: POST `/api/auth/token/refresh/`
 4. **Logout**: POST `/api/auth/logout/`
 
@@ -243,8 +243,8 @@ A documentação completa da API está disponível em:
 ### Principais Endpoints
 
 #### Autenticação
-- `POST /api/auth/login/` - Login
-- `POST /api/auth/register/` - Registro
+- `POST /api/login/` - Login
+- `POST /api/register/` - Registro
 - `GET /api/auth/profile/` - Perfil do usuário
 
 #### Espaços de Trabalho

@@ -335,7 +335,7 @@ const Home = () => {
                 </Link>
               </Button>
               <Button size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-blue-600" asChild>
-                <Link to="/auth/register">
+                <Link to="/register">
                   <Users className="h-5 w-5 mr-2" />
                   Criar Conta
                 </Link>
